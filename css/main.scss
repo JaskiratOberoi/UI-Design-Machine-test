@@ -1,0 +1,184 @@
+*,
+body,
+html {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: #1b1b1b;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  background-color: #527bec;
+  color: #f1f1f1;
+  width: 60%;
+  padding: 10px 0;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .heading-section {
+    text-align: center;
+    margin: 1rem 0;
+    background-color: #527bec;
+    color: #f1f1f1;
+
+    h1 {
+      font-size: 48px;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 2rem;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .slide-entry-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      max-width: 800px;
+      max-height: 800px;
+      min-width: 300px;
+      width: 800px;
+      height: 750px;
+      box-sizing: border-box;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+
+      .uploaders {
+        .logo-uploader {
+          padding: 0.2rem 0;
+          display: flex;
+          justify-content: space-between;
+          width: 250px;
+          label {
+            font-size: 30px;
+          }
+          button {
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            background-color: #527bec;
+            color: #f1f1f1;
+          }
+        }
+        .content-uploader {
+          padding: 0.5rem 0;
+          display: flex;
+          justify-content: space-between;
+          width: 250px;
+          label {
+            font-size: 30px;
+          }
+          button {
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            background-color: #527bec;
+            color: #f1f1f1;
+          }
+        }
+      }
+      .textboxes {
+        display: flex;
+        flex-direction: column;
+        .text-content {
+          display: flex;
+          flex-direction: column;
+          margin: 1rem 0;
+
+          label {
+            font-weight: 600;
+          }
+          input {
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    .slide-preview-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 1rem;
+      max-width: 800px;
+      max-height: 800px;
+      width: 800px;
+      height: 750px;
+      box-sizing: border-box;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+
+      .preview {
+        .main-preview {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          height: 350px;
+          width: auto;
+          margin: 1rem;
+          overflow: hidden;
+
+          i {
+            font-size: 40px;
+          }
+        }
+        .slider {
+          display: flex;
+
+          img {
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .slide-entry-section {
+    width: 300px;
+    min-width: 300px;
+    margin-bottom: 10px;
+    box-shadow: none !important;
+  }
+  .slide-preview-section {
+    box-shadow: none !important;
+  }
+  .inner-container {
+    flex-direction: column !important;
+  }
+}
